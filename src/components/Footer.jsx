@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-gray-400 text-center py-6 mt-10">
-      © 2025 Gulnur | Bütün hüquqlar qorunur.
+    <footer className="bg-gray-800 text-gray-400 text-center ">
+      © 2025 Gulnur | All rights reserved.
     </footer>
   );
 };
