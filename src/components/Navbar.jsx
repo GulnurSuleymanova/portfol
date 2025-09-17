@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"; 
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -11,9 +12,9 @@ const Navbar = () => {
         </h1>
 
         <ul className="hidden md:flex space-x-8 text-[#DAC5A7] font-medium">
-          <li><a href="#about" className="hover:text-white transition">About</a></li>
-          <li><a href="#projects" className="hover:text-white transition">Projects</a></li>
-          <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
+          <li><Link to="/about" className="hover:text-white transition">About</Link></li>
+          <li><Link to="/projects" className="hover:text-white transition">Projects</Link></li>
+          <li><Link to="/contact" className="hover:text-white transition">Contact</Link></li>
         </ul>
 
         <button 
@@ -24,11 +25,12 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile menu */}
       {open && (
         <ul className="md:hidden bg-black/95 text-[#DAC5A7] px-6 py-6 space-y-6 text-lg font-medium shadow-lg">
-          <li><a href="#about" className="block hover:text-white transition">About</a></li>
-          <li><a href="#projects" className="block hover:text-white transition">Projects</a></li>
-          <li><a href="#contact" className="block hover:text-white transition">Contact</a></li>
+          <li><Link to="/about" className="block hover:text-white transition">About</Link></li>
+          <li><Link to="/projects" className="block hover:text-white transition">Projects</Link></li>
+          <li><Link to="/contact" className="block hover:text-white transition">Contact</Link></li>
         </ul>
       )}
     </nav>
