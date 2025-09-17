@@ -37,7 +37,7 @@ const Contact = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black px-6 py-20 relative overflow-hidden">
+    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black px-6 py-20 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#DAC5A7] rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#DAC5A7] rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-2000"></div>
@@ -81,8 +81,7 @@ const Contact = () => {
               key={index}
               href={contact.href}
               target="_blank"
-              rel="noopener noreferrer"
-              className="group block p-4 bg-gray-700/30 rounded-xl hover:bg-[#DAC5A7]/10 transition-all duration-300 hover:scale-105 w-64"
+              className="group block p-4 bg-gray-700/30 rounded-xl hover:bg-[#DAC5A7]/10 transition-all duration-300 hover:scale-105 w-84"
             >
               <div className="flex items-center gap-4">
                 <div className={`p-3 rounded-full bg-gradient-to-r ${contact.color} text-white group-hover:scale-110 transition-transform duration-300`}>
