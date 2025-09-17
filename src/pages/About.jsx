@@ -76,7 +76,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-[#DAC5A7]/30 transition-all duration-500">
               <h3 className="text-2xl font-bold text-[#DAC5A7] mb-6 flex items-center gap-3">
-                <User size={28} />
+                <User size={28} className="text-[#DAC5A7]"/>
                 My Story
               </h3>
               <div className="space-y-4 text-gray-300 leading-relaxed font-serif">
@@ -94,13 +94,13 @@ const About = () => {
 
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-[#DAC5A7]/30 transition-all duration-500">
               <h3 className="text-xl font-bold text-[#DAC5A7] mb-4 flex items-center gap-3">
-                <Award size={24} />
+                <Award size={24} className="text-[#DAC5A7]" />
                 My Values
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 {values.map((value, i) => (
                   <div key={i} className="text-center p-3 rounded-xl bg-gray-700/30 hover:bg-[#DAC5A7]/10 transition-colors duration-300">
-                    <value.icon className="mx-auto mb-2" size={28} />
+                    <value.icon className="mx-auto mb-2 text-[#DAC5A7]" size={28} />
                     <div className="text-gray-300 text-sm">{value.text}</div>
                   </div>
                 ))}
@@ -110,7 +110,7 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-6 mb-16">
               {funFacts.map((fact, i) => (
                 <div key={i} className="text-center bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-[#DAC5A7]/30 hover:transform hover:scale-105 transition-all duration-500 group">
-                  <fact.icon className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto" size={40} />
+                  <fact.icon className="text-[#DAC5A7] text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto" size={40} />
                   <div className="text-3xl font-bold text-[#DAC5A7] mb-2">{fact.number}</div>
                   <div className="text-gray-400">{fact.label}</div>
                 </div>
@@ -121,7 +121,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-[#DAC5A7]/30 transition-all duration-500">
               <h3 className="text-2xl font-bold text-[#DAC5A7] mb-6 flex items-center gap-3">
-                <Code size={28} />
+                <Code size={28} className="text-[#DAC5A7]" />
                 Skills
               </h3>
               <div className="space-y-4">
@@ -129,7 +129,7 @@ const About = () => {
                   <div key={i} className="group">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-3">
-                        <skill.icon size={20} />
+                        <skill.icon size={20} className="text-[#DAC5A7]" />
                         <span className="text-gray-300 font-medium">{skill.name}</span>
                       </div>
                       <span className="text-[#DAC5A7] text-sm font-semibold">{skill.level}%</span>
@@ -147,7 +147,7 @@ const About = () => {
 
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 hover:border-[#DAC5A7]/30 transition-all duration-500">
               <h3 className="text-2xl font-bold text-[#DAC5A7] mb-6 flex items-center gap-3">
-                <Clock size={28} />
+                <Clock size={28} className="text-[#DAC5A7]" />
                 Experience
               </h3>
               <div className="space-y-6">
