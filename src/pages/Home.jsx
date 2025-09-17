@@ -1,5 +1,6 @@
 import React from 'react';
 import gulnur from '../assets/gulnur.png'
+import About from './About';
 
 const Home = () => {
   return (
@@ -31,8 +32,8 @@ const Home = () => {
             <h1 className="text-5xl lg:text-7xl font-bold text-[#DAC5A7] mb-4 animate-fade-in">
               Hi I'm Gulnur
             </h1>
-            
-             <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
+
+            <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
               <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-[#DAC5A7]"></div>
               <h3 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-0 tracking-wide font-mono">
                 Frontend Developer
@@ -42,7 +43,7 @@ const Home = () => {
           </div>
           <div className="">
             <p className="text-lg md:text-xl text-[#DAC5A7] leading-relaxed mb-6 font-serif">
-            I am a front-end developer dedicated to transforming problems and opportunities into user-focused, functional, and aesthetic digital experiences. By combining beautiful design with user-centered thinking, I create products that are both visually appealing and intuitive to use
+              I am a front-end developer dedicated to transforming problems and opportunities into user-focused, functional, and aesthetic digital experiences. By combining beautiful design with user-centered thinking, I create products that are both visually appealing and intuitive to use
             </p>
           </div>
           <div className="mt-12">
@@ -61,18 +62,21 @@ const Home = () => {
         </div>
 
         <div className="relative flex-1 max-w-lg">
-            <img 
-              src={gulnur}
-              alt="Gulnur - Frontend Developer" 
-            />
+          <img
+            src={gulnur}
+            alt="Gulnur - Frontend Developer"
+          />
         </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full flex justify-center" style={{border: `2px solid #DAC5A7`}}>
-          <div className="w-1 h-3 rounded-full mt-2 animate-pulse" style={{backgroundColor: '#DAC5A7'}}></div>
+        <div className="w-6 h-10 rounded-full flex justify-center" style={{ border: `2px solid #DAC5A7` }}>
+          <div className="w-1 h-3 rounded-full mt-2 animate-pulse" style={{ backgroundColor: '#DAC5A7' }}></div>
         </div>
       </div>
+      <section id="about"></section>
+      <section id="projects"></section>
+      <section id="contact"></section>
 
       <style jsx>{`
         @keyframes fade-in {
