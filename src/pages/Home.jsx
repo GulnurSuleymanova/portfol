@@ -1,6 +1,5 @@
-import React from 'react';
 import gulnur from '../assets/gulnur.png'
-import About from './About';
+import pdf from '../assets/My Resume.pdf'
 
 const Home = () => {
   return (
@@ -47,17 +46,18 @@ const Home = () => {
             </p>
           </div>
           <div className="mt-12">
-            <a
-              href="#projects"
-              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#DAC5A7] text-black font-semibold rounded-2xl shadow-2xl hover:shadow-[#DAC5A7]/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-[#DAC5A7] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <span className="relative z-10">Download CV</span>
-              <svg className="relative z-10 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              <div className="absolute inset-0 rounded-2xl border-2 border-[#DAC5A7]/40 group-hover:border-[#DAC5A7] transition-colors duration-500"></div>
-            </a>
+          <a
+  href={pdf} 
+  download
+  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#DAC5A7] text-black font-semibold rounded-2xl shadow-2xl hover:shadow-[#DAC5A7]/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
+>
+  <span className="relative z-10">Download CV</span>
+  <svg className="relative z-10 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+  </svg>
+  <div className="absolute inset-0 rounded-2xl border-2 border-[#DAC5A7]/40 group-hover:border-[#DAC5A7] transition-colors duration-500"></div>
+</a>
+
           </div>
         </div>
 

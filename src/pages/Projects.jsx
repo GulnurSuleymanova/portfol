@@ -20,7 +20,7 @@ const Projects = () => {
     {
       title: "Papa Johns Clone",
       desc: "A fully functional clone of Papa Johns pizza ordering website.",
-      link: "https://github.com/GulnurSuleymanova/Papa-Jhons",
+      link: "https://papa-jhons-itiv9o07z-gulnurs-projects-d64a01c7.vercel.app/",
       img: papaj,
       tech: ["JavaScript", "HTML", "CSS"],
       accent: "from-[#DAC5A7] to-red-300"
@@ -28,7 +28,7 @@ const Projects = () => {
     {
       title: "Starbucks Clone",
       desc: "An interactive clone of the official Starbucks website.",
-      link: "https://github.com/GulnurSuleymanova/Starbucks",
+      link: "https://starbucks-dusky.vercel.app/",
       img: starbucks,
       tech: ["HTML", "CSS", "JavaScript"],
       accent: "from-[#DAC5A7] to-green-400"
@@ -36,7 +36,7 @@ const Projects = () => {
     {
       title: "Bank Home Page Clone",
       desc: "A professional clone of a bank homepage.",
-      link: "https://github.com/GulnurSuleymanova/Bank-home-page-clone",
+      link: "https://bank-23oxge9qp-gulnurs-projects-d64a01c7.vercel.app/",
       img: bank,
       tech: ["HTML", "CSS", "JavaScript"],
       accent: "from-[#DAC5A7] to-cyan-300"
@@ -44,7 +44,7 @@ const Projects = () => {
     {
       title: "Samsung US Clone",
       desc: "A pixel-perfect clone of the official Samsung US website.",
-      link: "https://github.com/GulnurSuleymanova/SamsungUs-clone",
+      link: "https://samsung-us-clone-ojyu1jl2m-gulnurs-projects-d64a01c7.vercel.app/",
       img: samsung,
       tech: ["React", "CSS"],
       accent: "from-[#DAC5A7] to-purple-300"
@@ -52,7 +52,7 @@ const Projects = () => {
     {
       title: "Landing Page",
       desc: "A modern and responsive landing page design.",
-      link: "https://github.com/GulnurSuleymanova/landing-page",
+      link: "https://landing-page-9og1dhb1j-gulnurs-projects-d64a01c7.vercel.app/",
       img: landing,
       tech: ["HTML", "CSS"],
       accent: "from-[#DAC5A7] to-green-300"
@@ -60,7 +60,7 @@ const Projects = () => {
     {
       title: "Polo 360",
       desc: "A project showcasing 360° product view.",
-      link: "https://github.com/GulnurSuleymanova/polo-360",
+      link: "https://polo-360-hss2ad1lj-gulnurs-projects-d64a01c7.vercel.app/",
       img: polo,
       tech: [ "CSS", "HTML"],
       accent: "from-[#DAC5A7] to-blue-300"
@@ -167,22 +167,6 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="text-center mt-20 relative z-10">
-        <div className="mb-8">
-          <p className="text-gray-400 mb-6 text-lg font-serif">Want to see more projects?</p>
-        </div>
-        <a
-          href="#contact"
-          className="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#DAC5A7] text-black font-semibold rounded-2xl shadow-2xl hover:shadow-[#DAC5A7]/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-[#DAC5A7] to-yellow-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-          <span className="relative z-10">Contact Me</span>
-          <svg className="relative z-10 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-          </svg>
-          <div className="absolute inset-0 rounded-2xl border-2 border-[#DAC5A7]/40 group-hover:border-[#DAC5A7] transition-colors duration-500"></div>
-        </a>
-      </div>
 
       <style jsx>{`
         @keyframes fade-in {
